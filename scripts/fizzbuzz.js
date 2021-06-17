@@ -1,28 +1,20 @@
-/*
-for( let nombre = 1 ; nombre <= 100 ; nombre += 1) {
-let sortie = "";
- if(nombre % 3 == 0) {
-     sortie += "Fizz";
- }
- if(nombre % 5 == 0) {
-     sortie += 'Buzz';
- }else {
-     console.log(nombre);
- }
- console.log(sortie || nombre);
-}
-*/
-
-
-for( let nombre = 1 ; nombre <= 100 ; nombre += 1) {
-     if(nombre % 3 == 0) {
+ for (let i = 1 ; i <= 100 ; i++) {
+   if((i % 3 == 0) && (i % 5 == 0)) {
+          console.log("FizzBuzz");
+      }else if(i % 3 == 0) {
           console.log("Fizz");
-     }
-     if(nombre % 5 == 0) {
-        console.log("Buzz");
-     }else {
-         console.log(nombre);
-     }
-     console.log("FizzBuzz" || nombre);
-    }
+      }else if(i % 5 == 0) {
+          console.log("Buzz");
+      }else {
+          console.log(i);
+      }
     
+ }
+ 
+
+ for( let j = 1 ; j <= 100 ; j++) {
+     let output ="";
+     if(j % 3 == 0) output += "Fizz";
+     if(j % 5 == 0) output += "Buzz";
+     console.log(output || j);
+ }
